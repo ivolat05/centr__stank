@@ -13,7 +13,7 @@ ul {
 }
 
 .conteiner {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -83,19 +83,20 @@ ul {
 /*-------------header------------------------*/
 .header {
    
-    margin: 0 auto;
+   
 }
 .conteiner {
     
 }
 
 .header__wrapper {
+   
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
-    display: flex;
+   display: flex;
 }
 
 .logo__img {}
@@ -116,6 +117,20 @@ ul {
 
 .menu__list-link {}
 
-.header__box {}
+.header__box {
+    display: block;
+}
 
-.header__box-link {}
+.header__box-link {
+    display: block;
+}
+
+.fa-chevron-right {
+    border: 2px solid #1099CC;
+    padding: 6px 8px 6px 11px;
+    color: #1099CC;
+    border-radius: 50%;
+
+    padding: relative;
+    top: 0;
+}
