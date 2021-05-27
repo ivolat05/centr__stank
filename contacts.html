@@ -8,10 +8,13 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styleicon.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+        </script>
     </head>
     <body>
         <header class="header">
@@ -51,7 +54,6 @@
                 </div>
             </div>
         </header>
-
         <section class="breadcrumb">
             <div class="conteiner">
                 <ul class="breadcrumb__box">
@@ -66,7 +68,6 @@
                 </ul>
             </div>
         </section>
-
         <section class="contact">
             <div class="conteiner">
                 <div class="title contact__title">
@@ -95,38 +96,31 @@
                             ОТПРАВИТЬ СООБЩЕНИЕ
                         </h5>
                         <form action="/" class="form">
-                            <div class="contact__form-inner">
+                            <div class="contact__form-inner ">
                                 <input type="text" placeholder="Ваше ФИО *">
                                 <input type="text" placeholder="+7 (___) ___ - __ - __ *">
                             </div>
-                            <textarea class="textarea" placeholder="Сообщение *"></textarea>
-                            <div class="consultation__content-checbox">
-                                <label class='check'>
-                                    <input class='check__input' type='checkbox'>
-                                    <span class="check__box"></span>
-                                </label>
-                                <p>
-                                    Отправляя свои данные, я принимаю Пользовательское соглашение<br>
-                                    и подтверждаю, что даю согласие на обработку и передачу своих<br> персональных данных.
-                                </p>
-                            </div>
-                            <button class='contact__form-btn' >
-                                ОТПРАВИТЬ
-                            </button>
+                                <textarea class="textarea" placeholder="Сообщение *"></textarea>
+                                <div class="consultation__content-checbox contact__content-box">
+                                    <label class='check'>
+                                        <input class='check__input' type='checkbox'>
+                                        <span class="check__box"></span>
+                                    </label>
+                                    <p>
+                                        Отправляя свои данные, я принимаю Пользовательское соглашение<br>
+                                        и подтверждаю, что даю согласие на обработку и передачу своих<br> персональных данных.
+                                    </p>
+                                        <button class='contact__form-btn' >
+                                        ОТПРАВИТЬ
+                                        </button>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A283333d79d59326e5ec331a0091be07c399eb0168b6190dac0d8cde5a05685e0&amp;width=100%25&amp;height=553&amp;lang=ru_RU&amp;scroll=false"></script>
-        </div>
-
-
-        
-       
-
+        <div id="map" style="width: 100%; height: 600px; filter: gray;"></div>
         <footer class="footer">
             <div class="conteiner">
                 <div class="footer__inner">
@@ -177,11 +171,60 @@
                 </div>
             </div>
         </footer>
-                
+        <script>
+            ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.902154, 30.374681],
+            zoom: 17
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'images/map__marker.png',
+            iconImageSize: [32, 42],
+            iconImageOffset: [-5, -38]
+        }),
+
+        myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+            hintContent: 'Центр станочного оборудования, 196084, Санкт-Петербург, ул. Самойлова, д 5',
+            balloonContent: 'Центр станочного оборудования, 196084, Санкт-Петербург, ул. Самойлова, д 5',
+            iconContent: 'Центр станочного оборудования, 196084, Санкт-Петербург, ул. Самойлова, д 5'
+
+        }, {
+            iconLayout: 'default#imageWithContent',
+            iconImageHref: 'images/map__marker.png',
+            iconImageSize: [64, 64],
+            iconImageOffset: [-24, -24],
+            iconContentOffset: [15, 15],
+            iconContentLayout: MyIconContentLayout
+        });
+        myMap.controls.remove('searchControl');
+        myMap.behaviors.disable('scrollZoom');
+        myMap.behaviors.disable('drag');
+        myMap.geoObjects
+        .add(myPlacemark)
+        .add(myPlacemarkWithContent);
+        $('#menu').css({
+                left: e.get('pagePixels')[100],
+                top: e.get('pagePixels')[100]
+            });
+
+});
+        </script> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
+        <script src="/js/jquery.magnific-popup.js"></script>
         <script src="js/main.js"></script>
+        
     </body>
 </html>
     

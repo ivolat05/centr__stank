@@ -829,6 +829,9 @@ ul {
     outline: none;
     border: none;
     padding: 14px 20px;
+
+    display: inline-block;
+    margin-bottom: 24px;
 }
 
 .box__inner-btn__brand:hover {
@@ -1054,16 +1057,55 @@ ul {
     padding-bottom: 24px;
 }
 
-.form {}
+.form {
+    max-width: 628px;
+}
 
-.contact__form-inner {}
+.contact__form-inner {
+    width: 680px;
+    padding-bottom: 24px;
+}
+.contact__form-inner input{
+    width: 302px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8898AA;
+    padding: 12px 13px;
+
+    background: #FFFFFF;
+    border: 1px solid #CAD1D7;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
 
 .form-control {}
 
 .input-m {}
 
 .textarea {
+    width: 100%;
+    height: 140px;
     resize: none;
+    margin-bottom: 24px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8898AA;
+
+    background: #FFFFFF;
+    border: 1px solid #CAD1D7;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    padding: 12px 13px;
 }
 
 .consultation__content-checbox {}
@@ -1099,3 +1141,58 @@ ul {
 
 }
 
+.contact__content-box  {
+    width: 680px;
+   
+}
+
+.contact__content-box button {
+    margin-left: 20%;
+}
+
+
+/*--------------------------------------------*/
+/*-------------------------------------------*/
+/*-----------MODAL FORM-------------------------*/
+.white-popup {
+    max-width: 628px;
+}
+
+.modal__button button{
+    margin-left: 12%;
+}
+
+.modal__button input {
+    width: 87%;
+}
+
+.modal__button textarea {
+    width: 100%;
+}
+
+.mfp-close-btn-in .mfp-close {
+    display: none;
+}
+
+.form__poput-title {
+    display: flex;
+    justify-content: space-between;
+}
+.form__poput-title > .product__title,
+.form__poput-title img{
+    padding: 18px 0 60px;
+}
+
+.popup__rezet {
+    margin-bottom: 0;
+}
+
+.ymaps-2-1-78-map {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    
+     -webkit-filter: grayscale(100%);
+   
+    /* Chrome 19+ & Safari 6+ */
+    filter: grayscale(100%);
+    
+}

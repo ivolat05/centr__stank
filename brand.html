@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styleicon.css">
@@ -102,9 +103,9 @@
                             защищает каждый зуб от...
                         </p>
                         <div class="box__inner-link">
-                            <button class='box__inner-btn__brand'>
+                            <a  href="#form-popup" class='popup__rezet popup-with-form box__inner-btn__brand'>
                                 УЗНАТЬ СТОИМОСТЬ
-                            </button>
+                            </a>
                             <a href="#" class="box__inner-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -124,9 +125,9 @@
                             обрабатываемости.
                         </p>
                         <div class="box__inner-link">
-                            <button class='box__inner-btn__brand'>
+                            <a  href="#form-popup" class='popup__rezet popup-with-form box__inner-btn__brand'>
                                 УЗНАТЬ СТОИМОСТЬ
-                            </button>
+                            </a>
                             <a href="#" class="box__inner-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -146,9 +147,9 @@
                             поверхности, а также...
                         </p>
                         <div class="box__inner-link">
-                            <button class='box__inner-btn__brand'>
+                            <a  href="#form-popup" class='popup__rezet popup__rezet popup-with-form box__inner-btn__brand'>
                                 УЗНАТЬ СТОИМОСТЬ
-                            </button>
+                            </a>
                             <a href="#" class="box__inner-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -168,9 +169,9 @@
                             инструментальных и...
                         </p>
                         <div class="box__inner-link">
-                            <button class='box__inner-btn__brand'>
+                            <a  href="#form-popup" class='popup__rezet popup-with-form box__inner-btn__brand'>
                                 УЗНАТЬ СТОИМОСТЬ
-                            </button>
+                            </a>
                             <a href="#" class="box__inner-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -190,9 +191,9 @@
                             защищает каждый зуб от...
                         </p>
                         <div class="box__inner-link">
-                            <button class='box__inner-btn__brand'>
+                            <a  href="#form-popup" class='popup__rezet popup-with-form box__inner-btn__brand'>
                                 УЗНАТЬ СТОИМОСТЬ
-                            </button>
+                            </a>
                             <a href="#" class="box__inner-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -212,9 +213,9 @@
                             обрабатываемости.
                         </p>
                         <div class="box__inner-link">
-                            <button class='box__inner-btn__brand'>
+                            <a  href="#form-popup" class='popup__rezet popup-with-form box__inner-btn__brand'>
                                 УЗНАТЬ СТОИМОСТЬ
-                            </button>
+                            </a>
                             <a href="#" class="box__inner-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -234,9 +235,9 @@
                             поверхности, а также...
                         </p>
                         <div class="box__inner-link">
-                            <button class='box__inner-btn__brand'>
+                            <a  href="#form-popup" class='popup__rezet popup-with-form box__inner-btn__brand'>
                                 УЗНАТЬ СТОИМОСТЬ
-                            </button>
+                            </a>
                             <a href="#" class="box__inner-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -256,9 +257,9 @@
                             инструментальных и...
                         </p>
                         <div class="box__inner-link">
-                            <button class='box__inner-btn__brand'>
+                            <a  href="#form-popup" class='popup__rezet popup-with-form box__inner-btn__brand'>
                                 УЗНАТЬ СТОИМОСТЬ
-                            </button>
+                            </a>
                             <a href="#" class="box__inner-btn">
                                 <i class="fas fa-chevron-right"></i>
                             </a>
@@ -302,8 +303,40 @@
                 </div>
             </div>
         </section>
+        <div id="form-popup" class="white-popup mfp-hide">
+            <div class='form__poput-title'>
+                <div class="title product__title">
+                    <h1>
+                        ЗАПРОС
+                    </h1>
+                    <h2>
+                        СТОИМОСТИ
+                    </h2>
+                </div>
+                <img  id='close' src='images/close__icon.svg'>
+            </div>
+            <form action="#">
+                <div class="contact__form-inner modal__button"><input id="name" class="inputbox" type="text" placeholder="Ваше ФИО *" /></div>
+                <div class="contact__form-inner modal__button"><input id="email" class="inputbox" type="email" placeholder="E-mail *" /></div>
+                <div class="contact__form-inner modal__button"> <input type="text" placeholder="+7 (___) ___ - __ - __ *"></div>
+                <div class="modal__button"><textarea class="textarea" name="mess" id="mess" class="inputbox" cols="30" rows="10" placeholder="Ваше сообщение"></textarea></div>
+                <div class="modal__button consultation__content-checbox contact__content-box">
+                <label class='check'>
+                <input class='check__input' type='checkbox'>
+                <span class="check__box"></span>
+                </label>
+                    <p>
+                        Отправляя свои данные, я принимаю Пользовательское соглашение<br>
+                        и подтверждаю, что даю согласие на обработку и передачу своих<br> персональных данных.
+                    </p>
+                    <button class='modal__button  contact__form-btn' >
+                        ОТПРАВИТЬ
+                    </button>
+                </div>
+                </div>
+            </form>
+        </div>
 
-       
 
         <section class="text">
             <div class="conteiner">
@@ -373,6 +406,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
+        <script src="/js/jquery.magnific-popup.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
