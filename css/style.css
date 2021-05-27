@@ -285,6 +285,7 @@ ul {
 
 
 
+
 /*----------------main------------------*/
 .main {
     background: linear-gradient(275.58deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
@@ -658,6 +659,7 @@ ul {
 .footer__box {
     width: 411px;
     display: block;
+    padding-right: 10px;
 }
 
 .footer__box > h6,
@@ -1196,3 +1198,235 @@ ul {
     filter: grayscale(100%);
     
 }
+
+
+/*-----------------media--------------------*/
+/*-------------------header------------------*/
+
+.menu__burger-active {
+    width: 164px;
+    display: block;
+   
+    top: 30%;
+    text-align: center;
+    z-index: 3;
+}
+
+.header__box-active {
+    position: absolute;
+    top: 111px;
+        
+}
+
+@media(max-width:834px) {
+    .menu__burger{
+        display: block;
+        padding-right: 20px;
+
+
+    }
+    .logo {
+        width: 240px;
+        padding-left: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        height: 100%;
+       
+        position: absolute;
+        top: 50px;
+        left: -1011px;
+        transform: translateX(-50%);
+        background: #fff;
+        z-index: 333px;
+        transition: .8s;
+    }
+
+    .menu__active{
+        left: 50%;
+        z-index: 34242;
+    }
+
+    .menu__list {
+        width: 100%;
+        padding-top: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    .header__box {
+        position: relative;
+        top: 0;
+        right: 55%;
+       
+    }
+
+    .header__wrapper-item {
+        width: 200px;
+    }
+}
+
+@media(max-width: 525px) {
+    .logo__img-two {
+        display: none;
+    }
+    
+}
+
+@media(max-width: 380px){
+     .header__box {
+        position: absolute;
+        right: 28%;
+    }
+}
+
+/*--------------main------------*/
+@media(max-width: 940px) {
+    .main__conteiner-inner>h1 {
+       
+        font-size: 28px;
+        line-height: 29px;
+    }
+    .main__conteiner-inner>p {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    .slick-slide img {
+        display: block;
+        width: 48%;
+    }
+}
+
+@media(max-width: 569px) {
+    .main__conteiner-inner>h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .main__conteiner-inner>p {
+        font-size: 15px;
+        line-height: 16px;
+    }
+}
+
+@media(max-width: 380px) {
+    .slick-slide img {
+        display: none;
+        
+    }
+    .main__conteiner-inner {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slick-slide .active__slaid {
+        display: block;
+        margin: 0 auto;
+    }
+    .main__conteiner-btn {
+        margin: 0 auto;
+    }
+
+    .slick-dots {
+        left: 39%;
+    }
+
+}
+
+/*-------------box-------------*/
+@media(max-width: 1270px) {
+    .box{
+        grid-template-columns: auto auto auto;
+    }
+    
+}
+
+@media(max-width: 970px) {
+     .box{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width:650px) {
+    .box {
+        display: block;
+    }
+
+    .title{
+        display: block;
+
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+
+
+
+/*-----------------consultation--------------*/
+
+@media(max-width: 515px) {
+    .consultation__btn {
+        display: block;
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translateX(-60%);
+    }
+
+    .consultation {
+        position: relative;
+        overflow: hidden;
+    }
+    .consultation__content-checbox {
+       padding-left: 15%;
+       padding-bottom: 100px;
+        
+    }
+    .consultation__content-checbox p {
+        width: 200px;
+    }
+}
+
+/*------------media advantages------------*/
+@media(max-width:940px){
+    .advantages__wrapp {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+@media(max-width: 620px) {
+    .advantages__wrapp {
+        display: block;
+    }
+}
+
+/*-------------footer media-----------*/
+
+@media(max-width: 700px){
+    .footer__inner{
+    display: block;
+    }
+
+    .footer__box{ 
+        margin: 10px;
+        width: 90%;
+    }
+}
+
+/*-----------media product*------------*/
+@media(max-width: 660px){
+    .contact__form-inner {
+        max-width: 650px;
+    }
+
+    .product__box img {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+

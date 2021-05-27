@@ -1,4 +1,10 @@
-$(function(){
+$(function () {
+    $('.menu__burger').click((event) => {
+        $('.menu__burger').toggleClass('burger__active'),
+            $('.menu').toggleClass('menu__active')
+     
+    });
+
     // slaider
     $('.main__slaider').slick({
         dots: true,
