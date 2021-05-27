@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>category</title>
+        <title>brand</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -18,28 +18,30 @@
             <div class="conteiner">
                 <div class="header__wrapper">
                     <div class="logo">
-                        <img class="logo__img" class="logo__img" src="images/header__img.png" alt="">
-                        <img class="logo__img-two" src="images/headr__img-two.png" alt="">
+                        <a href="#" class="logo__link">
+                            <img class="logo__img" class="logo__img" src="images/header__img.png" alt="">
+                            <img class="logo__img-two" src="images/headr__img-two.png" alt="">
+                        </a>
                     </div>
                     <div class="header__wrapper-item">
                         <nav class="menu">
                             <ul class='menu__list'>
                                 <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">каталог</a>
+                                    <a class="menu__list-link" href="#">КАТАЛОГ</a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">о компании</a>
+                                    <a class="menu__list-link" href="#">О КОМПАНИИ</a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">статьи</a>
+                                    <a class="menu__list-link" href="#">СТАТЬИ</a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">контакты</a>
+                                    <a class="menu__list-link" href="#">КОНТАКТЫ</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="header__box">
-                            <a class="header__box-link" href="tell:+78126292049">+7 (812) 629-20-49</a>
+                            <a class="header__box-link header__box-link__tell" href="tel:+78126292049">+7 (812) 629-20-49</a>
                             <a class="header__box-link" href="mailto:info@centr-stank.ru">info@centr-stank.ru</a>
                         </div>
                     </div>
@@ -69,7 +71,7 @@
                         </a>
                     </li>
                     <li>
-                        Lenox
+                            Lenox
                     </li>
                 </ul>
             </div>
@@ -269,35 +271,38 @@
         
 
 
-        <section class="consultation">
+       <section class="consultation">
             <div class="conteiner">
-                <div class="consultation__title">
+                <div class="title title__contrary"> 
                     <h1>
-                        нужна
+                        НУЖНА
                     </h1>
                     <h2>
-                        нужна консультация?
+                        КОНСУЛЬТАЦИЯ?
                     </h2>
                 </div>
                 <div class="consultation__content">
-                    <h5>
-                        оставьте ваши контакты, и мы перезвоним вам в течении 10 минут
-                    </h5>
+                    <p>
+                        ОСТАВЬТЕ ВАШИ КОНТАКТЫ, И МЫ ПЕРЕЗВОНИМ ВАМ В ТЕЧЕНИИ 10 МИНУТ
+                    </p>
                     <form class="consultation__content-form" action="/" name="backPhone" >
-                        <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="+7 (___) ___ - __ - __" required=”required” />
-                        <button id="telButton" type="submit" form="backPhone">заказать звонок </button>
+                        <input class='consultation__input'  id="telForm" maxlength="20" placeholder="+7 (___) ___ - __ - __" required=”required” />
+                        <button class="consultation__btn" id="telButton" type="submit" form="backPhone">ЗАКАЗАТЬ ЗВОНОК </button>
                     </form>
                     <div class="consultation__content-checbox">
-                        <input type='checkbox'>
+                        <label class='check'>
+                            <input class='check__input' type='checkbox'>
+                            <span class="check__box"></span>
+                        </label>
                         <p>
                             Отправляя свои данные, я принимаю Пользовательское соглашение<br>
                             и подтверждаю, что даю согласие на обработку и передачу своих<br> персональных данных.
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
+
        
 
         <section class="text">
@@ -315,56 +320,56 @@
             </div>
         </section>
 
-        <footer class="footer">
+         <footer class="footer">
             <div class="conteiner">
-                <div class="footer__box">
-                    <h6>
-                        каталог продукции
-                    </h6>
-                    <a class="footer__box-link" href="#">
-                        ленточные пилы
-                    </a>
-                    <a class="footer__box-link" href="#">
-                        ленточнопильные станки
-                    </a>
-                </div>
-                
-                <div class="footer__box">
-                    <h6>
-                        компания
-                    </h6>
-                    <a class="footer__box-link" href="#">
-                        о компании
-                    </a>
-                    <a class="footer__box-link" href="#">
-                        статьи
-                    </a>
-                    <a class="footer__box-link" href="#">
-                        политика защиты данных
-                    </a>
-                </div>
-                
-                <div class="footer__box">
-                    <h6>
-                        контакты
-                    </h6>
-                    <p>
-                        +7 (812) 629-20-49
-                    </p>
-                    <div class="footer__box-copyright">
-                        <p>
-                            196084 Россия, Санкт-Петербург,<br>
-                            ул. Самойлова, 5<br>
-                            info@centr-stank.ru
-                        </p>
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <h6>
+                            КАТАЛОГ ПРОДУКЦИИ
+                        </h6>
+                        <a class="footer__box-link" href="#">
+                            ЛЕНТОЧНЫЕ ПИЛЫ
+                        </a>
+                        <a class="footer__box-link" href="#">
+                            ЛЕНТОЧНОПИЛЬНЫЕ СТАНКИ
+                        </a>
+                    </div>
+                    <div class="footer__box">
+                        <h6>
+                            КОМПАНИЯ
+                        </h6>
+                        <a class="footer__box-link" href="#">
+                            О КОМПАНИИ
+                        </a>
+                        <a class="footer__box-link" href="#">
+                            СТАТЬИ
+                        </a>
+                        <a class="footer__box-link" href="#">
+                            ПОЛИТИКА ЗАЩИТЫ ДАННЫХ
+                        </a>
+                    </div>
+                    <div class="footer__box">
+                        <h6>
+                            КОТАКТЫ
+                        </h6>
+                        <a class="footer__box-tell" href="tel:+78126292049" class="">
+                            +7 (812) 629-20-49
+                        </a>
+                        <div class="footer__box-copyright">
+                            <p>
+                                196084 Россия, Санкт-Петербург,<br>
+                                ул. Самойлова, 5<br>
+                            <a href="mailto:info@centr-stank.ru">info@centr-stank.ru</a>                            
+                            </p>
+                        </div>
                         <p>
                             © Компания “центр-станк” 2021
                         </p>
+                     </div>    
                     </div>
                 </div>
             </div>
         </footer>
-                
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
