@@ -329,9 +329,11 @@ ul {
     padding-bottom: 48px;
 }
 
-
 .main__conteiner-btn {
-    width: 153px;
+    display: inline-block;
+}
+.main__conteiner-btn {
+    
     padding:20px 42px 20px 24px;
     background: #1099CC;
 
@@ -442,12 +444,6 @@ ul {
     background: #263238 url('../images/background.png') repeat repeat;
 }
 
-.conteiner {}
-
-.title {}
-
-.title__contrary {}
-
 .consultation__content {
     display: block;
     margin-top: -35px;
@@ -514,7 +510,7 @@ ul {
 }
 
 .consultation__content-checbox {
-    width: 500px;
+    max-width: 500px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -569,7 +565,7 @@ ul {
 
 .check__box {
     position: absolute;
-    margin-top: -12px;
+    margin-top: -.8em;
     margin-left: -1em;
     width: 20px;
     height: 20px;
@@ -637,7 +633,7 @@ ul {
    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     color: #1D1D1B;
 
@@ -923,9 +919,6 @@ ul {
 }
 
 .product__table table tr {
-
-    
-    
     border-bottom: 1px solid #DDDDDD;
     
 }
@@ -1001,7 +994,6 @@ ul {
     justify-content: space-between;
 }
 
-.contact__box {}
 .contact__box > p,
 .contact__box-link {
     display: block;
@@ -1046,9 +1038,6 @@ ul {
     left: 10px;
 }
 
-
-.contact__form {}
-
 .contact__form h5{
     font-family: 'Roboto Condensed',  sans-serif;
     font-style: normal;
@@ -1060,11 +1049,11 @@ ul {
 }
 
 .form {
-    max-width: 628px;
+    max-width: 610px;
 }
 
 .contact__form-inner {
-    width: 680px;
+    max-width: 680px;
     padding-bottom: 24px;
 }
 .contact__form-inner input{
@@ -1083,11 +1072,6 @@ ul {
     box-sizing: border-box;
     border-radius: 4px;
 }
-
-
-.form-control {}
-
-.input-m {}
 
 .textarea {
     width: 100%;
@@ -1109,14 +1093,6 @@ ul {
 
     padding: 12px 13px;
 }
-
-.consultation__content-checbox {}
-
-.check {}
-
-.check__input {}
-
-.check__box {}
 
 .contact__form-btn {
     font-family: 'Roboto', sans-serif;
@@ -1144,12 +1120,12 @@ ul {
 }
 
 .contact__content-box  {
-    width: 680px;
+    display: flex;
    
 }
 
 .contact__content-box button {
-    margin-left: 20%;
+   margin:0 0 auto ;
 }
 
 
@@ -1158,14 +1134,27 @@ ul {
 /*-----------MODAL FORM-------------------------*/
 .white-popup {
     max-width: 628px;
+    padding: 18px 23px 1px;
+  
+    border: 1px solid red;
 }
 
 .modal__button button{
     margin-left: 12%;
 }
 
+.popup__title {
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+#close {
+    padding: 0;
+    padding-bottom: 60px;
+}
+
 .modal__button input {
-    width: 87%;
+    width: 100%;
 }
 
 .modal__button textarea {
@@ -1198,6 +1187,8 @@ ul {
     filter: grayscale(100%);
     
 }
+
+
 
 
 /*-----------------media--------------------*/
@@ -1326,6 +1317,7 @@ ul {
         margin: 0 auto;
     }
     .main__conteiner-btn {
+        display: inline-block;
         margin: 0 auto;
     }
 
@@ -1367,11 +1359,23 @@ ul {
 
 /*-----------------consultation--------------*/
 
+@media(max-width: 630px) {
+    .title__contrary{
+        padding: 0;
+    }
+
+    .title__contrary h1,
+    .title__contrary h2 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+}
+
 @media(max-width: 515px) {
     .consultation__btn {
         display: block;
         position: absolute;
-        top: 88%;
+        top: 85%;
         left: 50%;
         transform: translateX(-60%);
     }
@@ -1381,13 +1385,16 @@ ul {
         overflow: hidden;
     }
     .consultation__content-checbox {
-        width: 100%;
-        padding-left: 15%;
+        justify-content: center;
+        margin: 0 auto 60px;
     }
-   
 
-    .consultation__content-checbox{
-        margin-bottom: 40px;
+    .consultation__input {
+        margin: 0 auto;
+    }
+
+    .consultation__content-checbox>p {
+        font-size: 9px;
     }
 }
 
@@ -1418,7 +1425,7 @@ ul {
     }
 }
 
-/*-----------media product*------------*/
+/*-----------media product------------*/
 @media(max-width: 830px){
     .product__img {
         float: none;
@@ -1448,91 +1455,93 @@ ul {
 }
 
 @media(max-width: 790px) {
-    .white-popup {
-       padding: 10px;
-    }
-
     .popup__product {
         width: 300px;
         padding-bottom: 55px;
     }
-
-
-    .modal__button input {
-        width: 40%;
-    }
-   
-    .modal__button .textarea {
-        width: 96%;
+}
+/*-------------popup media-------------*/
+@media(max-width: 650px){
+    .white-popup {
+        margin: 10px;
     }
 
-    .modal__button p {
-        max-width: 220px;
-
-        overflow: hidden;
-       
+    .popup__title {
+        display: flex;
     }
 
     .modal__button button {
-            position: absolute;
-            top: 89%;
-        }
-    
-
-    .modal__title {
-            font-size: 24px;
-            line-height: 37px;
+        margin-left: 0;
     }
 
-    .close {
-        width: 10%;
-    }
-
-    .form__poput-title>.product__title,
     .form__poput-title img {
-        padding: 15px 0 20px;
-}
+        height: 95px;
+    }
 }
 
-/*-------------------------------------------------*/
-/*----------------contact-----------------------------*/
-@media(max-width: 1385px) {
-    .contact__wrap {
+@media(max-width: 415px){
+     .popup__title{
+        font-size: 18px;
+        padding-bottom: 30px;
+     }
+
+     #close {
+         height: 55px;
+         padding: 0;
+         padding:10px 0 30px;
+     }
+}
+
+/*-------------contact media-----------*/
+@media(max-width: 960px) {
+    .contact__wrapp {
+        display: table;
+        margin: 0 auto;
+    }
+
+    .contact__title {
         display: block;
-    }
-    .contact__form-inner {
-        width: 100%;
+        margin: 42px auto;
     }
 }
 
-@media( max-width: 1080px) {
+@media(max-width: 645px) {
     .contact__wrapp {
         display: block;
     }
-}
 
-@media(max-width: 700px) {
-   
-    .contact__content-box button {
-        margin: 0;
+    .contact__form-inner {
+        display: flex;
     }
 
-    .form {
+    .contact__form-inner input:nth-child(odd) {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 540px) {
+    .contact__form-inner {
+        display: block;
+    }
+
+    .contact__form-inner input {
         width: 100%;
+        margin: 10px auto;
     }
 
     .contact__content-box {
-        width: 100%;
-}
-}
+        display: block;
+        margin: 10px auto 50px;
+    }
 
-@media(max-width: 618px) {
-    .contact__form-inner input {
-        width: 100%;
-        margin-bottom: 10px;
+    .contact__content-box__checkbox {
+        margin: 0 auto;
+    }
+
+    .contact__content-box button {
+        display: block;
+        margin: 0 auto;
     }
 }
 
-.white-popu {
-    display: none;
-}
+

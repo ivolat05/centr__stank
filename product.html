@@ -389,36 +389,40 @@
                 </div>
             </div>
         </footer> 
-        <div id="form-popup" class="white-popup mfp-hide popup__product">
+        <div id="form-popup" class="white-popup mfp-hide">
             <div class='form__poput-title'>
-            <div class="modal__title title product__title">
-                <h1>
-                    ЗАПРОС
-                </h1>
-                <h2>
-                    СТОИМОСТИ
-                </h2>
+                <div class="title popup__title">
+                    <h1>
+                        ЗАПРОС
+                    </h1>
+                    <h2>
+                        СТОИМОСТИ
+                    </h2>
                 </div>
-                    <img class='close'  id='close' src='images/close__icon.svg'>
-                </div>
-                <form action="#">
+                <img   id='close' src='images/close__icon.svg'>
+            </div>
+            <form action="#">
                 <div class="contact__form-inner modal__button"><input id="name" class="inputbox" type="text" placeholder="Ваше ФИО *" /></div>
                 <div class="contact__form-inner modal__button"><input id="email" class="inputbox" type="email" placeholder="E-mail *" /></div>
                 <div class="contact__form-inner modal__button"> <input type="text" placeholder="+7 (___) ___ - __ - __ *"></div>
                 <div class="modal__button"><textarea class="textarea" name="mess" id="mess" class="inputbox" cols="30" rows="10" placeholder="Ваше сообщение"></textarea></div>
-                <div class="modal__button consultation__content-checbox contact__content-box">
-                <label class='check'>
-                    <input class='check__input' type='checkbox'>
-                    <span class="check__box"></span>
-                </label>
-                    <p>
-                        Отправляя свои данные, я принимаю Пользовательское соглашение<br>
-                        и подтверждаю, что даю согласие на обработку и передачу своих<br> персональных данных.
-                    </p>
-                <button class='modal__button  contact__form-btn' >
-                    ОТПРАВИТЬ
-                </button>
-            </div>
+                    <div class="contact__content-box">
+                                    <div class="consultation__content-checbox contact__content-box__checkbox">
+                                        <label class='check'>
+                                            <input class='check__input' type='checkbox'>
+                                            <span class="check__box"></span>
+                                        </label>
+                                        <p>
+                                        Отправляя свои данные, я принимаю Пользовательское соглашение<br>
+                                        и подтверждаю, что даю согласие на обработку и передачу своих<br> персональных данных.
+                                        </p>
+                                    </div>
+                                    
+                                        <button class='contact__form-btn' >
+                                        ОТПРАВИТЬ
+                                        </button>
+                               
+                    </div>
                 </div>
             </form>
         </div>
