@@ -1135,8 +1135,6 @@ ul {
 .white-popup {
     max-width: 628px;
     padding: 18px 23px 1px;
-  
-    border: 1px solid red;
 }
 
 .modal__button button{
